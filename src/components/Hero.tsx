@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -21,12 +23,12 @@ function Hero() {
             >
               Shop Plants
             </a>
-            <a
-              href="#"
+            <Link
+              to="/care-guides"
               className="rounded-full border border-emerald-200 bg-white px-6 py-3 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50"
             >
               Explore Care Guides
-            </a>
+            </Link>
           </div>
         </div>
 
