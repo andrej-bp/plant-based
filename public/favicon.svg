@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Leaf icon">
+  <circle cx="32" cy="32" r="30" fill="#f5faf6" />
+  <path
+    d="M17 38c0-14 12-24 30-24-1 18-11 30-25 31 2-2 4-5 6-9 3-6 5-11 6-16-4 5-8 10-11 16-2 4-4 8-6 12z"
+    fill="#1f8a4c"
+  />
+  <path
+    d="M23 42c4-2 7-5 10-10 3-5 5-10 7-15"
+    stroke="#16683a"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    fill="none"
+  />
+</svg>
