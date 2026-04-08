@@ -20,6 +20,7 @@ function ProductCard({ product }: ProductCardProps) {
               {product.category}
             </p>
             <h3 className="mt-1 text-lg font-semibold text-neutral-900">{product.name}</h3>
+            <p className="mt-1.5 text-sm text-neutral-500">{product.description}</p>
           </div>
           <p className="text-lg font-semibold text-neutral-900">${product.price}</p>
         </div>
