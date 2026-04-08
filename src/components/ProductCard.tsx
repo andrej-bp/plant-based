@@ -8,7 +8,7 @@ function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <img
-        src={product.imageUrl}
+        src={`${import.meta.env.BASE_URL}${product.imageUrl.replace(/^\//, '')}`}
         alt={product.name}
         className="h-56 w-full object-cover"
         loading="lazy"
