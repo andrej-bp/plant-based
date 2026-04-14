@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import CareGuidesPage from './pages/CareGuidesPage'
+import ContactPage from './pages/ContactPage'
 import FaqPage from './pages/FaqPage'
 import LightGuidePage from './pages/LightGuidePage'
 import PotSizeGuidePage from './pages/PotSizeGuidePage'
@@ -24,6 +25,7 @@ function App() {
         <Route path="/care-guides/repotting" element={<RepottingGuidePage />} />
         <Route path="/care-guides/pot-size" element={<PotSizeGuidePage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>

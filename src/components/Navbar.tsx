@@ -23,6 +23,9 @@ function Navbar() {
           <NavLink to="/faq" className={navClassName}>
             FAQ
           </NavLink>
+          <NavLink to="/contact" className={navClassName}>
+            Contact
+          </NavLink>
           <button
             type="button"
             className="rounded-full bg-emerald-700 px-4 py-2 text-white transition hover:bg-emerald-800"
