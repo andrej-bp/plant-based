@@ -17,6 +17,11 @@ const guides = [
     text: 'Repot every 12-18 months into a pot 1-2 inches wider with well-draining soil.',
     to: '/care-guides/repotting',
   },
+  {
+    title: 'Picking the Right Pot Size',
+    text: 'The right pot size keeps roots healthy and watering predictable — going too big is a common mistake.',
+    to: '/care-guides/pot-size',
+  },
 ]
 
 function CareGuidesPage() {

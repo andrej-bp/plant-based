@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import CareGuidesPage from './pages/CareGuidesPage'
 import FaqPage from './pages/FaqPage'
 import LightGuidePage from './pages/LightGuidePage'
+import PotSizeGuidePage from './pages/PotSizeGuidePage'
 import NewArrivalsPage from './pages/NewArrivalsPage'
 import RepottingGuidePage from './pages/RepottingGuidePage'
 import ShopPage from './pages/ShopPage'
@@ -21,6 +22,7 @@ function App() {
         <Route path="/care-guides/watering" element={<WateringGuidePage />} />
         <Route path="/care-guides/light" element={<LightGuidePage />} />
         <Route path="/care-guides/repotting" element={<RepottingGuidePage />} />
+        <Route path="/care-guides/pot-size" element={<PotSizeGuidePage />} />
         <Route path="/faq" element={<FaqPage />} />
       </Routes>
       <Footer />
