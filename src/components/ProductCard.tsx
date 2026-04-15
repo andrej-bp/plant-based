@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import type { Product } from '../data/products'
 
 type ProductCardProps = {
@@ -6,7 +7,7 @@ type ProductCardProps = {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+    <Link to={`/shop/${product.id}`} className="group block overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <img
         src={`${import.meta.env.BASE_URL}${product.imageUrl.replace(/^\//, '')}`}
         alt={product.name}
@@ -33,14 +34,11 @@ function ProductCard({ product }: ProductCardProps) {
           </li>
         </ul>
 
-        <button
-          type="button"
-          className="w-full rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-800"
-        >
-          Add to cart
-        </button>
+        <div className="w-full rounded-xl bg-emerald-700 px-4 py-2.5 text-center text-sm font-semibold text-white transition group-hover:bg-emerald-800">
+          View Plant
+        </div>
       </div>
-    </article>
+    </Link>
   )
 }
 
