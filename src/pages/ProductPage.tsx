@@ -71,6 +71,15 @@ function ProductPage() {
             }`}>
               {product.petSafe ? 'Pet Safe' : 'Not Pet Safe'}
             </span>
+            <span className={`rounded-full border px-4 py-1.5 text-sm font-medium ${
+              product.care === 'Beginner-friendly'
+                ? 'border-emerald-100 bg-emerald-50 text-emerald-800'
+                : product.care === 'Low maintenance'
+                ? 'border-neutral-200 bg-neutral-50 text-neutral-700'
+                : 'border-amber-100 bg-amber-50 text-amber-800'
+            }`}>
+              {product.care}
+            </span>
           </div>
 
           <button
@@ -95,6 +104,16 @@ function ProductPage() {
                 {product.petSafe
                   ? 'This plant is non-toxic and safe for cats and dogs.'
                   : 'This plant is toxic if ingested. Keep out of reach of pets and small children.'}
+              </p>
+            </div>
+            <div className="flex gap-3">
+              <span className="w-20 shrink-0 text-xs font-semibold uppercase tracking-[0.15em] text-neutral-400 pt-0.5">Care</span>
+              <p className="text-sm text-neutral-600">
+                {product.care === 'Beginner-friendly'
+                  ? 'A great choice for new plant owners — forgiving, low-fuss, and hard to kill with normal care.'
+                  : product.care === 'Low maintenance'
+                  ? 'Easy to keep healthy with basic attention to watering and light, but benefits from a little consistency.'
+                  : 'Requires specific conditions and careful attention to watering, light, and humidity to thrive.'}
               </p>
             </div>
           </div>

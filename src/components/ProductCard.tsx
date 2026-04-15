@@ -32,6 +32,15 @@ function ProductCard({ product }: ProductCardProps) {
           <li className="rounded-full bg-neutral-100 px-3 py-1">
             {product.petSafe ? 'Pet Safe' : 'Not Pet Safe'}
           </li>
+          <li className={`rounded-full px-3 py-1 ${
+            product.care === 'Beginner-friendly'
+              ? 'bg-emerald-100 text-emerald-800'
+              : product.care === 'Low maintenance'
+              ? 'bg-neutral-100 text-neutral-700'
+              : 'bg-amber-100 text-amber-800'
+          }`}>
+            {product.care}
+          </li>
         </ul>
 
         <div className="w-full rounded-xl bg-emerald-700 px-4 py-2.5 text-center text-sm font-semibold text-white transition group-hover:bg-emerald-800">
