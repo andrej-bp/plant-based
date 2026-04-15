@@ -27,7 +27,7 @@ function App() {
         <Route path="/care-guides/pot-size" element={<PotSizeGuidePage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/shop/:id" element={<ProductPage />} />
+        <Route path="/shop/:slug" element={<ProductPage />} />
       </Routes>
       <Footer />
     </div>

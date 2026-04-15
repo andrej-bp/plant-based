@@ -1,6 +1,7 @@
 export type Product = {
   id: number
   name: string
+  slug: string
   description: string
   category: 'House Plants' | 'Succulents'
   price: number
@@ -15,6 +16,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: 'Monstera Deliciosa',
+    slug: 'monstera-deliciosa',
     description: 'A bold, fast-growing statement plant with iconic split leaves that thrives in bright, indirect light.',
     category: 'House Plants',
     price: 42,
@@ -27,6 +29,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: 'Pilea Peperomioides',
+    slug: 'pilea-peperomioides',
     description: 'Cheerful and compact with round, coin-shaped leaves — easy to care for and quick to produce offshoots.',
     category: 'House Plants',
     price: 29,
@@ -39,6 +42,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: 'Snake Plant Laurentii',
+    slug: 'snake-plant-laurentii',
     description: 'Nearly indestructible with striking upright leaves edged in gold — one of the best plants for low-light spaces.',
     category: 'House Plants',
     price: 34,
@@ -51,6 +55,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: 'String of Pearls',
+    slug: 'string-of-pearls',
     description: 'A cascading succulent with bead-like foliage that looks stunning in a hanging pot or on a high shelf.',
     category: 'Succulents',
     price: 26,
@@ -63,6 +68,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: 'Echeveria Elegans',
+    slug: 'echeveria-elegans',
     description: 'A classic rosette succulent with soft silvery-blue leaves — low maintenance and endlessly elegant.',
     category: 'Succulents',
     price: 18,
@@ -75,6 +81,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: 'Raven ZZ Plant',
+    slug: 'raven-zz-plant',
     description: 'A dramatic deep-purple variety of the famously resilient ZZ plant — almost impossible to neglect to death.',
     category: 'House Plants',
     price: 38,
@@ -87,6 +94,7 @@ export const products: Product[] = [
   {
     id: 7,
     name: 'Zebra Haworthia',
+    slug: 'zebra-haworthia',
     description: 'A petite, architectural succulent with bold white stripes — perfect for a desk or windowsill.',
     category: 'Succulents',
     price: 16,
@@ -99,6 +107,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: 'Burgundy Rubber Plant',
+    slug: 'burgundy-rubber-plant',
     description: 'Rich, glossy burgundy leaves and a sculptural form make this one of the most stylish plants you can own.',
     category: 'House Plants',
     price: 46,
@@ -111,6 +120,7 @@ export const products: Product[] = [
   {
     id: 9,
     name: 'Lithops',
+    slug: 'lithops',
     description: 'Fascinating living stones that mimic pebbles — a conversation-starting collector\'s plant that thrives on neglect.',
     category: 'Succulents',
     price: 14,
@@ -123,6 +133,7 @@ export const products: Product[] = [
   {
     id: 10,
     name: 'Golden Pothos',
+    slug: 'golden-pothos',
     description: 'A forgiving, fast-trailing vine with heart-shaped golden-green leaves — the perfect starter plant for any space.',
     category: 'House Plants',
     price: 22,
@@ -135,6 +146,7 @@ export const products: Product[] = [
   {
     id: 11,
     name: 'Peace Lily',
+    slug: 'peace-lily',
     description: 'An elegant plant that blooms with white sail-shaped flowers and thrives in low light — a natural air purifier.',
     category: 'House Plants',
     price: 28,
@@ -147,6 +159,7 @@ export const products: Product[] = [
   {
     id: 12,
     name: 'Bird of Paradise',
+    slug: 'bird-of-paradise',
     description: 'A dramatic tropical showpiece with huge, paddle-shaped leaves that commands attention in any bright room.',
     category: 'House Plants',
     price: 58,
@@ -159,6 +172,7 @@ export const products: Product[] = [
   {
     id: 13,
     name: 'Aloe Vera',
+    slug: 'aloe-vera',
     description: 'A hardy, sculptural succulent prized as much for its soothing gel as for its architectural good looks.',
     category: 'Succulents',
     price: 15,
@@ -171,6 +185,7 @@ export const products: Product[] = [
   {
     id: 14,
     name: 'Jade Plant',
+    slug: 'jade-plant',
     description: 'A long-lived, tree-like succulent with glossy oval leaves — said to bring good luck and easy to keep for decades.',
     category: 'Succulents',
     price: 19,
@@ -183,6 +198,7 @@ export const products: Product[] = [
   {
     id: 15,
     name: 'Spider Plant',
+    slug: 'spider-plant',
     description: 'One of the most adaptable houseplants around, sending out cheerful cascading offshoots that are easy to propagate.',
     category: 'House Plants',
     price: 18,

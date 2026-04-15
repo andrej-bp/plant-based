@@ -2,8 +2,8 @@ import { Link, useParams } from 'react-router-dom'
 import { products } from '../data/products'
 
 function ProductPage() {
-  const { id } = useParams()
-  const product = products.find((p) => p.id === Number(id))
+  const { slug } = useParams()
+  const product = products.find((p) => p.slug === slug)
 
   if (!product) {
     return (

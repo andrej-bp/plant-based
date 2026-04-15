@@ -7,7 +7,7 @@ type ProductCardProps = {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <Link to={`/shop/${product.id}`} className="group block overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+    <Link to={`/shop/${product.slug}`} className="group block overflow-hidden rounded-2xl border border-emerald-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
       <img
         src={`${import.meta.env.BASE_URL}${product.imageUrl.replace(/^\//, '')}`}
         alt={product.name}
